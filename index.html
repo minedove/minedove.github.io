@@ -1,32 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
-		<style>
-			*{margin: 0;padding: 0;}
-			body{background: linear-gradient(#e3b3ec,#c775d6);width:100%;height:100%;}
-			div{width: 480px;margin: 0 auto;}
-			div h2{text-align: center;font-size: 30px;color: darkred;margin: 30px 0;}
-			div p{color: red;font-size: 24px;text-indent: 2em;margin-top: 10px;}
+		<title>mylime</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			footer {
+				height: 100px;
+				line-height: 100px;
+				width: 100%;
+				background: #333;
+				color: #fff;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+			}
+			
+			.carousel img {
+				width: 100%;
+			}
 		</style>
 	</head>
+
 	<body>
-		<div>
-			<h2>破窑赋</h2>
-			<p>天有不测风云，人有旦夕祸福。蜈蚣百足，行不及蛇；雄鸡两翼，飞不过鸦。马有千里之程，无骑不能自往；人有冲天之志，非运不能自通。</p>
-			<p>盖闻：人生在世，富贵不能淫，贫贱不能移。文章盖世，孔子厄于陈邦；武略超群，太公钓于渭水。颜渊命短，殊非凶恶之徒；盗跖年长，岂是善良之辈。尧帝明圣，却生不肖之儿；瞽叟愚顽，反生大孝之子。张良原是布衣，萧何称谓县吏。晏子身无五尺，封作齐国宰相；孔明卧居草庐，能作蜀汉军师。楚霸虽雄，败于乌江自刎；汉王虽弱，竟有万里江山。李广有射虎之威，到老无封；冯唐有乘龙之才，一生不遇。韩信未遇之时，无一日三餐，及至遇行，腰悬三齐玉印，一旦时衰，死于阴人之手。</p>
-			
-			<p>有先贫而后富，有老壮而少衰。满腹文章，白发竟然不中；才疏学浅，少年及第登科。深院宫娥，运退反为妓妾；风流妓女，时来配作夫人。</p>
+		<div class="wrapper">
+			<!--导航-->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="container">
 
-			<p>青春美女，却招愚蠢之夫；俊秀郎君，反配粗丑之妇。蛟龙未遇，潜水于鱼鳖之间；君子失时，拱手于小人之下。衣服虽破，常存仪礼之容；面带忧愁，每抱怀安之量。时遭不遇，只宜安贫守份；心若不欺，必然扬眉吐气。初贫君子，天然骨骼生成；乍富小人，不脱贫寒肌体。
-天不得时，日月无光；地不得时，草木不生；水不得时，风浪不平；人不得时，利运不通。注福注禄，命里已安排定，富贵谁不欲？人若不依根基八字，岂能为卿为相？</p>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+			            <span class="sr-only">切换导航</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+							<a href="index.html"><img src="img/getAvatar.jpg" width="40" style="padding-top: 5px;" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">技术</a>
+								</li>
+								<li>
+									<a href="newsList.html">相关</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">文学 <b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">唐诗</a>
+										</li>
+										<li>
+											<a href="#">宋词</a>
+										</li>
+										<li>
+											<a href="#">元曲</a>
+										</li>
+										<li>
+											<a href="#">明小说</a>
+										</li>
+										<li>
+											<a href="#">近代</a>
+										</li>
+									</ul>
+								</li>
 
-			<p>吾昔寓居洛阳，朝求僧餐，暮宿破窖，思衣不可遮其体，思食不可济其饥，上人憎，下人厌，人道我贱，非我不弃也。今居朝堂，官至极品，位置三公，身虽鞠躬于一人之下，而列职于千万人之上，有挞百僚之杖，有斩鄙吝之剑，思衣而有罗锦千箱，思食而有珍馐百味，出则壮士执鞭，入则佳人捧觞，上人宠，下人拥。人道我贵，非我之能也，此乃时也、运也、命也。</p>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div id="myCarousel" class="carousel slide" data-interval="false">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/1.jpg">
+					</div>
+					<div class="item">
+						<img src="img/2.jpg">
+					</div>
+					<div class="item">
+						<img src="img/3.jpg">
+					</div>
+				</div>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i>
+				</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i>
+				</a>
 
-			<p>嗟呼！人生在世，富贵不可尽用，贫贱不可自欺，听由天地循环，周而复始焉。</p>
+			</div>
+			<footer>
+				版权
+			</footer>
 
-		</div>
 	</body>
+
 </html>
